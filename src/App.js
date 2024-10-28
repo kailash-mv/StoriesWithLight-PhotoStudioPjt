@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import ViewHeader from "./components/ViewHeader";
+import ViewShow from "./components/ViewShow.js";
+import ViewTopics from "./components/ViewTopics.js";
+import ViewContact from "./components/ViewContact.js";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-['Garamond'] bg-backgroundone">
+      <ViewHeader />
+      <ViewShow />
+      <ViewTopics />
+      <ViewContact />
     </div>
   );
 }
