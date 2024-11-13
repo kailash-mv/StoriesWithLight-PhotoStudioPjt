@@ -3,12 +3,12 @@ import logo from "./assets/logoswl.png";
 const ViewContact = () => {
   const arr = ["instagram", "facebook", "youtube", "twitter"];
   return (
-    <div className="bg-backgroundtwo pt-4 h-auto">
-      <div className=" bg-backgroundtwo grid grid-cols-3 grid-rows-1 gap-x-7 pt-2">
+    <div className="bg-backgroundtwo h-auto mt-20 ">
+      <div className=" bg-backgroundtwo grid grid-cols-3 grid-rows-1 gap-x-7 pt-8">
         <img src={logo} className="mt-4 ml-10 rounded-lg col-span-1"></img>
-        <div className="place-items-start rounded-3xl h-auto ml-10">
-          <p className="mt-3 px-7 text-2xl pt-3">
-            <strong>Reach Us At: </strong>
+        <div className="place-items-start rounded-3xl h-auto ml-10 pt-3">
+          <p className="mt-3 px-7 text-2xl ">
+            <span className="font-semibold">Reach Us At: </span>
             <br />
             #35, 5th Main,
             <br />
@@ -40,11 +40,7 @@ const ViewContact = () => {
 
         <div className="col-span-1 px-7 py-4">
           <h2 className="text-2xl font-semibold mb-3">Leave A Message!</h2>
-          <form
-            action="https://formspree.io/f/your-form-id"
-            method="POST"
-            className="flex flex-col space-y-3"
-          >
+          <form className="flex flex-col space-y-3">
             <input
               type="text"
               name="name"
@@ -63,22 +59,23 @@ const ViewContact = () => {
               name="message"
               placeholder="Your Message"
               required
-              className="border-2 border-gray-300 rounded-lg p-2 h-24 resize-none focus:outline-none focus:border-primary"
+              className="border-2 border-gray-300 rounded-lg 
+              p-2 h-24 resize-none 
+              focus:outline-none focus:border-primary"
             ></textarea>
             <button
               type="submit"
-              className="bg-primary hover:bg-primarydark text-white font-semibold py-2 rounded-lg transition duration-300"
+              className="py-3 px-3 max-w-32
+             rounded-md bg-backgroundone text-xl opacity-100 
+             hover:opacity-70 font-light self-center"
             >
-              <span className="rounded-xl border-y-2 py-3 mt-4 border-accenttwo">
-                Send Message
-              </span>
+              SUBMIT
             </button>
           </form>
         </div>
       </div>
 
-      <footer className="bg-backgroundtwo text-center mt-0">
-        <hr className="border-accenttwo border-t-2 pb-5" />
+      <footer className="bg-backgroundtwo text-center -mt-16">
         <p className="text-gray-600 text-sm">
           &copy; 2024 Stories with Light Studio. All rights reserved.
         </p>
