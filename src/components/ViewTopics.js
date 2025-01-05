@@ -2,7 +2,7 @@ import React from "react";
 import image4 from "./assets/photo4.jpg";
 
 const ViewTopics = () => {
-  const arr = ["Pre-Wedding", "Wedding", "Pets"];
+  // const arr = ["Pre-Wedding", "Wedding", "Pets"];
 
   return (
     <>
