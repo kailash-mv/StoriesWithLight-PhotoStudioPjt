@@ -15,12 +15,12 @@ const ViewTopics = () => {
           and <span className="text-accentone">anticipation.</span>
         </p>
         <div className=" mt-20 flex justify-center flex-wrap gap-28 mx-56">
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
         </div>
         <div className="mt-20 flex flex-col items-center">
           <h1 className="text-5xl my-14 font-extrabold">Wedding</h1>
@@ -31,12 +31,12 @@ const ViewTopics = () => {
             with timeless and breathtaking images.
           </p>
           <div className=" mt-20 flex justify-center flex-wrap gap-28 mx-56">
-            <img src={image4} className="rounded-md h-1/4 w-1/4" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" />
+            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
           </div>
         </div>
       </div>
@@ -49,12 +49,12 @@ const ViewTopics = () => {
           <span className="text-accentone"> personality. </span>
         </p>
         <div className=" mt-20 flex justify-center flex-wrap gap-28 mx-56">
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
         </div>
       </div>
     </>

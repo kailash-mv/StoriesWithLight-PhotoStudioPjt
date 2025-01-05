@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import image1 from "./assets/photo1.jpg";
 import image2 from "./assets/photo2.jpg";
 import image3 from "./assets/photo3.jpg";
@@ -55,11 +54,13 @@ const ViewShow = () => {
           <img
             src={image2}
             className="rounded-md absolute z-0 w-72 h-auto -mt-36 ml-80 "
+            alt=""
           />
-          <img src={image1} className="rounded-md relative z-10" />
+          <img src={image1} className="rounded-md relative z-10" alt="" />
           <img
             src={image3}
             className="rounded-md absolute z-20 w-96 h-auto -mt-40 -ml-16 pb-12"
+            alt=""
           />
         </div>
       </div>

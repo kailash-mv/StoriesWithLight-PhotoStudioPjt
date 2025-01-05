@@ -5,7 +5,11 @@ const ViewContact = () => {
   return (
     <div className="bg-backgroundtwo h-auto mt-20 ">
       <div className=" bg-backgroundtwo grid grid-cols-3 grid-rows-1 gap-x-7 pt-8">
-        <img src={logo} className="mt-4 ml-10 rounded-lg col-span-1"></img>
+        <img
+          src={logo}
+          className="mt-4 ml-10 rounded-lg col-span-1"
+          alt=""
+        ></img>
         <div className="place-items-start rounded-3xl h-auto ml-10 pt-3">
           <p className="mt-3 px-7 text-2xl ">
             <span className="font-semibold">Reach Us At: </span>

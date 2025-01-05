@@ -1,5 +1,4 @@
 import React from "react";
-import logosmall from "./assets/logosmall.png";
 
 const Viewheader = () => {
   const arr = ["instagram", "facebook", "youtube", "twitter"];
