@@ -25,7 +25,7 @@ const ViewTopics = () => {
         <div className="mt-20 flex flex-col items-center">
           <h1 className="text-5xl my-14 font-extrabold">Wedding</h1>
           <p className=" mx-52 mt-6 text-3xl">
-            Preserve the <span className="text-accentone">elesgance</span> and
+            Preserve the <span className="text-accentone">elegance</span> and
             <span className="text-accentone"> joy </span> of your special day
             <br />
             with timeless and breathtaking images.
