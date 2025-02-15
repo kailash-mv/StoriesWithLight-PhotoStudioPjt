@@ -1,9 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import logo from "./assets/logoswl.png";
-const ViewContact = () => {
+
+const ViewContact = forwardRef((props, ref) => {
   const arr = ["instagram", "facebook", "youtube", "twitter"];
   return (
-    <div className="bg-backgroundtwo h-auto mt-20 ">
+    <div ref={ref} className="bg-backgroundtwo h-auto mt-20 ">
       <div className=" bg-backgroundtwo grid grid-cols-3 grid-rows-1 gap-x-7 pt-8">
         <img
           src={logo}
@@ -86,6 +87,6 @@ const ViewContact = () => {
       </footer>
     </div>
   );
-};
+});
 
 export default ViewContact;

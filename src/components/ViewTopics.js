@@ -1,65 +1,81 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import image4 from "./assets/photo4.jpg";
-
-const ViewTopics = () => {
+import image5 from "./assets/photo5.jpg";
+import image6 from "./assets/photo6.jpg";
+import image7 from "./assets/photo7.jpg";
+import image8 from "./assets/photo8.jpg";
+import image9 from "./assets/photo9.jpg";
+import image10 from "./assets/photo10.jpg";
+import image11 from "./assets/photo11.jpg";
+import image12 from "./assets/photo12.jpg";
+import image13 from "./assets/photo13.jpg";
+import image14 from "./assets/photo14.jpg";
+import image15 from "./assets/photo15.jpg";
+import image16 from "./assets/photo16.jpg";
+import image17 from "./assets/photo17.jpg";
+import image18 from "./assets/photo18.jpg";
+import image19 from "./assets/photo19.jpg";
+import image20 from "./assets/photo20.jpg";
+import image21 from "./assets/photo21.jpg";
+const ViewTopics = forwardRef((props, ref) => {
   // const arr = ["Pre-Wedding", "Wedding", "Pets"];
 
   return (
     <>
-      <div className="mt-20 flex flex-col items-center">
+      <div ref={ref} className="mt-20 flex flex-col items-center">
         <h1 className="text-5xl my-14 font-extrabold">Pre-Wedding</h1>
-        <p className=" mx-52 mt-6 text-3xl">
+        <p className=" mx-52 text-3xl">
           Capture the magic before the 'I do's' with <br />
           unforgettable moments of
           <span className="text-accentone"> love </span>
           and <span className="text-accentone">anticipation.</span>
         </p>
-        <div className=" mt-20 flex justify-center flex-wrap gap-28 mx-56">
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+        <div className=" mt-16 flex justify-center flex-wrap gap-20 mx-56">
+          <img src={image4} className="rounded-sm h-1/4 w-1/4" alt="" />
+          <img src={image5} className="rounded-sm h-1/4 w-1/4" alt="" />
+          <img src={image6} className="rounded-sm h-1/4 w-1/4" alt="" />
+          <img src={image7} className="rounded-sm h-1/4 w-1/4" alt="" />
+          <img src={image8} className="rounded-sm h-1/4 w-1/4" alt="" />
+          <img src={image9} className="rounded-sm h-1/4 w-1/4" alt="" />
         </div>
         <div className="mt-20 flex flex-col items-center">
           <h1 className="text-5xl my-14 font-extrabold">Wedding</h1>
-          <p className=" mx-52 mt-6 text-3xl">
+          <p className=" mx-52 text-3xl">
             Preserve the <span className="text-accentone">elegance</span> and
             <span className="text-accentone"> joy </span> of your special day
             <br />
             with timeless and breathtaking images.
           </p>
-          <div className=" mt-20 flex justify-center flex-wrap gap-28 mx-56">
-            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+          <div className="mt-16 flex justify-center flex-wrap gap-20 mx-56">
+            <img src={image10} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image11} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image12} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image13} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image14} className="rounded-md h-1/4 w-1/4" alt="" />
+            <img src={image15} className="rounded-md h-1/4 w-1/4" alt="" />
           </div>
         </div>
       </div>
       <div className="mt-20 flex flex-col items-center">
         <h1 className="text-5xl my-14 font-extrabold">Pets</h1>
-        <p className=" mx-52 mt-6 text-3xl">
+        <p className=" mx-52 text-3xl">
           Celebrate your furry friends with stunning portraits
           <br /> that capture their unique{" "}
           <span className="text-accentone"> charm </span> and{" "}
           <span className="text-accentone"> personality. </span>
         </p>
-        <div className=" mt-20 flex justify-center flex-wrap gap-28 mx-56">
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image4} className="rounded-md h-1/4 w-1/4" alt="" />
+        <div className=" mt-16 flex justify-center flex-wrap gap-20 mx-56">
+          <img src={image16} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image17} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image18} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image19} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image20} className="rounded-md h-1/4 w-1/4" alt="" />
+          <img src={image21} className="rounded-md h-1/4 w-1/4" alt="" />
         </div>
       </div>
     </>
   );
-};
+});
 
 export default ViewTopics;
 
