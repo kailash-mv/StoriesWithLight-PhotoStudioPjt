@@ -17,121 +17,70 @@ import image18 from "./assets/photo18.jpg";
 import image19 from "./assets/photo19.jpg";
 import image20 from "./assets/photo20.jpg";
 import image21 from "./assets/photo21.jpg";
+
 const ViewTopics = forwardRef((props, ref) => {
-  // const arr = ["Pre-Wedding", "Wedding", "Pets"];
+  const sections = [
+    {
+      title: "Pre-Wedding",
+      description:
+        "Capture the magic before the 'I do's' with unforgettable moments of love and anticipation.",
+      images: [image4, image5, image6, image7, image8, image9],
+    },
+    {
+      title: "Wedding",
+      description:
+        "Preserve the elegance and joy of your special day with timeless and breathtaking images.",
+      images: [image10, image11, image12, image13, image14, image15],
+    },
+    {
+      title: "Pets",
+      description:
+        "Celebrate your furry friends with stunning portraits that capture their unique charm and personality.",
+      images: [image16, image17, image18, image19, image20, image21],
+    },
+  ];
 
   return (
-    <>
-      <div ref={ref} className="mt-20 flex flex-col items-center">
-        <h1 className="text-5xl my-14 font-extrabold">Pre-Wedding</h1>
-        <p className=" mx-52 text-3xl">
-          Capture the magic before the 'I do's' with <br />
-          unforgettable moments of
-          <span className="text-accentone"> love </span>
-          and <span className="text-accentone">anticipation.</span>
-        </p>
-        <div className=" mt-16 flex justify-center flex-wrap gap-20 mx-56">
-          <img src={image4} className="rounded-sm h-1/4 w-1/4" alt="" />
-          <img src={image5} className="rounded-sm h-1/4 w-1/4" alt="" />
-          <img src={image6} className="rounded-sm h-1/4 w-1/4" alt="" />
-          <img src={image7} className="rounded-sm h-1/4 w-1/4" alt="" />
-          <img src={image8} className="rounded-sm h-1/4 w-1/4" alt="" />
-          <img src={image9} className="rounded-sm h-1/4 w-1/4" alt="" />
-        </div>
-        <div className="mt-20 flex flex-col items-center">
-          <h1 className="text-5xl my-14 font-extrabold">Wedding</h1>
-          <p className=" mx-52 text-3xl">
-            Preserve the <span className="text-accentone">elegance</span> and
-            <span className="text-accentone"> joy </span> of your special day
-            <br />
-            with timeless and breathtaking images.
+    <div ref={ref} className="mt-20 flex flex-col items-center">
+      {sections.map((section, index) => (
+        <div key={index} className="mb-10 w-full px-6 sm:px-12 lg:mx-56">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-center my-8">
+            {section.title}
+          </h1>
+
+          <p className="text-2xl sm:text-2xl text-center py-8">
+            {section.description.split(" ").map((word, i) =>
+              [
+                "love",
+                "anticipation",
+                "elegance",
+                "joy",
+                "charm",
+                "personality",
+              ].includes(word) ? (
+                <span key={i} className="text-accentone">
+                  {" " + word + " "}
+                </span>
+              ) : (
+                word + " "
+              )
+            )}
           </p>
-          <div className="mt-16 flex justify-center flex-wrap gap-20 mx-56">
-            <img src={image10} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image11} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image12} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image13} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image14} className="rounded-md h-1/4 w-1/4" alt="" />
-            <img src={image15} className="rounded-md h-1/4 w-1/4" alt="" />
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 lg:gap-20 md:px-40 md:py-10 ">
+            {section.images.map((img, imgIndex) => (
+              <img
+                key={imgIndex}
+                src={img}
+                className="rounded-md w-full"
+                alt={`${section.title} ${imgIndex + 1}`}
+              />
+            ))}
           </div>
         </div>
-      </div>
-      <div className="mt-20 flex flex-col items-center">
-        <h1 className="text-5xl my-14 font-extrabold">Pets</h1>
-        <p className=" mx-52 text-3xl">
-          Celebrate your furry friends with stunning portraits
-          <br /> that capture their unique{" "}
-          <span className="text-accentone"> charm </span> and{" "}
-          <span className="text-accentone"> personality. </span>
-        </p>
-        <div className=" mt-16 flex justify-center flex-wrap gap-20 mx-56">
-          <img src={image16} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image17} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image18} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image19} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image20} className="rounded-md h-1/4 w-1/4" alt="" />
-          <img src={image21} className="rounded-md h-1/4 w-1/4" alt="" />
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
 });
 
 export default ViewTopics;
-
-// return (
-//   <div className="mt-20">
-//     {arr.map((ele, index) => {
-//       return (
-// <div className="flex flex-col items-center">
-//   <h1 className="text-5xl my-14 font-extrabold">{ele}</h1>
-//   <p className=" mx-52 mt-10  text-3xl">
-//     Capture the magic before the
-//     <span className="text-accentone"> 'I do's'</span> with <br />
-//     unforgettable moments of
-//     <span className="text-accentone"> love </span>
-//     and anticipation.
-//   </p>
-//   <div className=" mt-20 flex justify-center flex-wrap gap-28 mx-56">
-//     <img src={image4} className="rounded-md h-1/4 w-1/4" />
-//     <img src={image4} className="rounded-md h-1/4 w-1/4" />
-//     <img src={image4} className="rounded-md h-1/4 w-1/4" />
-//     <img src={image4} className="rounded-md h-1/4 w-1/4" />
-//     <img src={image4} className="rounded-md h-1/4 w-1/4" />
-//     <img src={image4} className="rounded-md h-1/4 w-1/4" />
-//   </div>
-// </div>
-//       );
-//     })}
-//   </div>
-// );
-
-// export default ViewTopics;
-
-{
-  // const arr = ["Pre-Wedding", "Wedding", "Pets"];
-  /* {arr.map((topic, index) => {
-          const link = `https://loremflickr.com/500/500/${topic}`;
-          var desc =
-            index == 0
-              ? "Capture the magic before the 'I do's' with unforgettable moments of love and anticipation."
-              : index == 1
-              ? "Preserve the elegance and joy of your special day with timeless and breathtaking images."
-              : "Celebrate your furry friends with stunning portraits that capture their unique charm and personality.";
-          return (
-            <div key={index} className="pb-8">
-              <h2 className="py-14 rounded text-center font-['Garamond'] text-7xl">
-                <span className="bg-backgroundtwo  border-y-2 rounded-xl mx-44 py-2 border-accenttwo opacity-100 hover:opacity-70">
-                  <a href="">{topic}</a>
-                </span>
-              </h2>
-              <div className="flex flex-row space-x-7">
-                <img src={link} className="mx-5 my-16 rounded-xl" alt={topic} />
-                <h3 className="my-36 ml-6 font-['Garamond'] text-5xl font-medium">
-                  <div className="mr-8 rounded-xl p-6">{desc}</div>
-                </h3>
-              </div>
-            </div>
-          );
-        })} */
-}
