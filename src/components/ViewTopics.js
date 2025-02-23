@@ -41,7 +41,7 @@ const ViewTopics = forwardRef((props, ref) => {
   ];
 
   return (
-    <div ref={ref} className="mt-20 flex flex-col items-center">
+    <div ref={ref} className="mt-0 sm:mt-20 flex flex-col items-center">
       {sections.map((section, index) => (
         <div key={index} className="mb-10 w-full px-6 sm:px-12 lg:mx-56">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-center my-8">

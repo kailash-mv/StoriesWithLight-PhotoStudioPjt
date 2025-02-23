@@ -1,10 +1,12 @@
+//
+
 import React from "react";
 import logoswl from "./assets/logosmall.png";
 
 const Viewheader = ({ onHandleContactClick }) => {
   const arr = ["instagram", "facebook", "youtube", "twitter"];
   return (
-    <div className="">
+    <div className="hidden md:block">
       <header className="mt-4 flex justify-center bg-backgroundtwo">
         <div className="flex flex-row items-center justify-center px-7 pl-10 h-20 text-accentthree md:flex-nowrap md:h-20 md:px-7">
           <button className="mx-3 px-3 py-2 bg-backgroundone rounded-md text-xl opacity-100 hover:opacity-70 font-light md:text-xl">

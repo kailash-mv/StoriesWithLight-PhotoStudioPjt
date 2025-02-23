@@ -5,14 +5,14 @@ const ViewContact = forwardRef((props, ref) => {
   const arr = ["instagram", "facebook", "youtube", "twitter"];
   return (
     <div ref={ref} className="bg-backgroundtwo h-auto mt-20 ">
-      <div className=" bg-backgroundtwo grid grid-cols-3 grid-rows-1 gap-x-7 pt-8">
+      <div className=" flex flex-col bg-backgroundtwo md:grid md:grid-cols-3 grid-rows-1 gap-x-7 pt-8">
         <img
           src={logo}
-          className="mt-4 ml-10 rounded-lg col-span-1"
+          className="hidden md:block mt-4 ml-10 rounded-lg col-span-1"
           alt=""
         ></img>
         <div className="place-items-start rounded-3xl h-auto ml-10 pt-3">
-          <p className="mt-3 px-7 text-2xl ">
+          <p className="-mx-4 sm:mx-0 sm:mt-3 sm:px-7 text-2xl ">
             <span className="font-semibold">Reach Us At: </span>
             <br />
             #35, 5th Main,
@@ -26,7 +26,7 @@ const ViewContact = forwardRef((props, ref) => {
             <strong>+91 95861 53296</strong>
           </p>
 
-          <div className="flex space-x-2 mt-3 px-7 text-2xl pt-3">
+          <div className="-mx-[43px] sm:mx-0 flex space-x-2 mt-3 px-7 text-2xl pt-3">
             {arr.map((topic) => {
               var link = `https://www.${topic}.com/storieswithlight`;
               var srclink = `https://img.icons8.com/color/48/${topic}.png`;
@@ -80,7 +80,7 @@ const ViewContact = forwardRef((props, ref) => {
         </div>
       </div>
 
-      <footer className="bg-backgroundtwo text-center -mt-16">
+      <footer className="-mt-2 pb-2 bg-backgroundtwo text-center md:-mt-16 md:pb-0">
         <p className="text-gray-600 text-sm">
           &copy; 2024 Stories with Light Studio. All rights reserved.
         </p>
