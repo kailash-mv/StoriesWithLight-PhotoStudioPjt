@@ -28,7 +28,7 @@ const ViewShow = ({ onHandleClick }) => {
         <div className="relative px-4 lg:pl-56 lg:pr-48 pt-12 lg:pt-24">
           <img
             src={image2}
-            className=" hidden lg:block rounded-md absolute z-0 w-48 lg:w-64 h-auto -mt-[60px] lg:-mt-[140px] ml-28 lg:ml-[600px]"
+            className=" hidden lg:block rounded-md absolute z-0 w-48 lg:w-64 h-auto -mt-[60px] lg:-mt-[140px] ml-28 lg:ml-[480px]"
             alt=""
           />
           <img
